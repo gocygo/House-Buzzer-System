@@ -28,6 +28,14 @@ body {
 }
 
 
+/* Styles for the square when it's big */
+#square.big {
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s;
+}
+
+
 /* Styles for the reset button */
 #reset {
     background-color: #3498db;
