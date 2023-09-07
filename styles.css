@@ -27,13 +27,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Styles for the square when it's big */
-#square.big {
-    width: 150px;
-    height: 150px;
-}
-
-
 
 /* Styles for the square when it's big */
 #square.big {
