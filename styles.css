@@ -32,7 +32,7 @@ body {
 #square.big {
     width: 150px;
     height: 150px;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 
