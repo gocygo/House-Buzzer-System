@@ -1,0 +1,108 @@
+/* Styles for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the container */
+#container {
+    text-align: center;
+}
+
+/* Styles for the square */
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    background-size: cover; /* Ensure the image covers the entire square */
+    border: none;
+    border-radius: 8px; /* Keep the corners rounded */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+}
+
+
+/* Styles for the reset button */
+#reset {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the reset button */
+#reset:hover {
+    background-color: #2980b9;
+}
+/* Other styles remain the same */
+
+#mode-toggle {
+    margin-top: 20px;
+}
+
+#dark-mode-toggle,
+#light-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+}
+
+#dark-mode-toggle:hover,
+#light-mode-toggle:hover {
+    color: #555;
+}
+#dark-mode-toggle {
+    display: none;
+}
+/* Styles for dark mode */
+body.dark-mode {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+/* Styles for the sun icon */
+#light-mode-toggle {
+    color: #fff;
+}
+/* Styles for the sun icon in dark mode */
+body.dark-mode #light-mode-toggle {
+    color: #fff;
+}
+/* Styles for the sun icon hover effect */
+#light-mode-toggle:hover {
+    color: #ccc;
+}
+/* Styles for the credit text */
+#credit {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #000;
+}
+
+/* Styles for the credit text in dark mode */
+body.dark-mode #credit {
+    color: #fff;
+}
+
+
+/* Styles for the light mode toggle button */
+#light-mode-toggle {
+    display: none;
+}
+#credit {
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  
