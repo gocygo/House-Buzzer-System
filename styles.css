@@ -23,9 +23,16 @@ body {
     border: none;
     border-radius: 8px; /* Keep the corners rounded */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
+    transition: all 0.3s; /* Apply transition to all properties */
     margin-bottom: 20px;
 }
+
+/* Styles for the square when it's big */
+#square.big {
+    width: 150px;
+    height: 150px;
+}
+
 
 
 /* Styles for the square when it's big */
