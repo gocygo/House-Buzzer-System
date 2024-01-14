@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <title>House Buzzer System</title>
+   <!-- Preloading images for faster display when keys are pressed -->
+   <link rel="preload" as="image" href="./images/vir_background.png">
+   <link rel="preload" as="image" href="./images/leo_background.png">
+   <link rel="preload" as="image" href="./images/bovis_background.png">
+   <link rel="preload" as="image" href="./images/aquila_background.png">
 
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+   <!-- Page title -->
+   <title>House Buzzer System</title>
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+   <!-- Favicons for various devices -->
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+
+   <!-- External CSS libraries -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <div id="square"></div>
-        <button id="reset">Reset</button>
-        <div id="mode-toggle">
-            <button id="dark-mode-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
-            <button id="light-mode-toggle">
-                <i class="fas fa-sun"></i>
-            </button>
-        </div>
-    </div>
-<div id="credit">Made by: <a href="https://github.com/gocygo" target="_blank">gocygo</a></div>
-    <script src="script.js"></script>
-    
-    
+   <!-- Main container for the application -->
+   <div id="container">
+       <!-- Square element that displays the background image -->
+       <div id="square"></div>
+       <!-- Button to reset the square image and size -->
+       <button id="reset">Reset</button>
+       <!-- Mode toggle buttons -->
+       <div id="mode-toggle">
+           <button id="dark-mode-toggle">
+               <i class="fas fa-moon"></i>
+           </button>
+           <button id="light-mode-toggle">
+               <i class="fas fa-sun"></i>
+           </button>
+       </div>
+   </div>
+   <!-- Credit section -->
+   <div id="credit">Made by: <a href="https://github.com/gocygo" target="_blank">gocygo</a></div>
+   <!-- JavaScript file that contains the logic for the application -->
+   <script src="script.js"></script>
 </body>
 </html>
