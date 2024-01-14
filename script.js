@@ -3,6 +3,20 @@ var square = document.getElementById('square');
 var resetButton = document.getElementById('reset');
 var colorSet = false;
 
+
+// Create a new Image object for each image
+var virImage = new Image();
+var leoImage = new Image();
+var bovisImage = new Image();
+var aquilaImage = new Image();
+
+// Set the src attribute of each image to start loading, aka load the image before hand to reduce wait times.
+virImage.src = './images/vir_background.png';
+leoImage.src = './images/leo_background.png';
+bovisImage.src = './images/bovis_background.png';
+aquilaImage.src = './images/aquila_background.png';
+
+
 // Listen for keydown events on the body
 document.body.onkeydown = function(e) {
     if (!colorSet) {
