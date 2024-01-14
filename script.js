@@ -6,23 +6,23 @@ var colorSet = false;
 // Listen for keydown events on the body
 document.body.onkeydown = function(e) {
     if (!colorSet) {
-        // Change square image and size on 'v (vir)', 'l (leo)', 'b (bovis)', or 'a (aquila)' key press
-        if (e.key == 'v') {
-            square.style.backgroundImage = "url('https://web.archive.org/web/20230907220858if_/https://static.wixstatic.com/media/c71fac_e048ce6f1d204e7ba6a081dfe6dbe50e~mv2.png/v1/fill/w_331,h_309,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/vir_background.png')";
-            square.classList.add('big'); // Make the square big
-            colorSet = true;
-        } else if (e.key == 'l') {
-            square.style.backgroundImage = "url('http://web.archive.org/web/20230907221017if_/https://static.wixstatic.com/media/c71fac_9092f637ba2145adbd6fb646cd30904a~mv2.png/v1/fill/w_325,h_309,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/leo_background.png')";
-            square.classList.add('big'); // Make the square big
-            colorSet = true;
-        } else if (e.key == 'b') {
-            square.style.backgroundImage = "url('http://web.archive.org/web/20230907221057if_/https://static.wixstatic.com/media/c71fac_5507cc8ff4244a8dad77bb3eed54bb43~mv2.png/v1/fill/w_331,h_309,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bovis_background.png')";
-            square.classList.add('big'); // Make the square big
-            colorSet = true;
-        } else if (e.key == 'a') {
-            square.style.backgroundImage = "url('http://web.archive.org/web/20230907221107if_/https://static.wixstatic.com/media/c71fac_e69868566e1d489c9608ed61769ee865~mv2.png/v1/fill/w_331,h_309,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aquila_background.png')";
-            square.classList.add('big'); // Make the square big
-            colorSet = true;
+      // Change square image and size on 'v (vir)', 'l (leo)', 'b (bovis)', or 'a (aquila)' key press
+      if (e.key == 'v') {
+        square.style.backgroundImage = "url('./images/vir_background.png')";
+        square.classList.add('big'); // Make the square big
+        colorSet = true;
+    } else if (e.key == 'l') {
+        square.style.backgroundImage = "url('./images/leo_background.png')";
+        square.classList.add('big'); // Make the square big
+        colorSet = true;
+    } else if (e.key == 'b') {
+        square.style.backgroundImage = "url('./images/bovis_background.png')";
+        square.classList.add('big'); // Make the square big
+        colorSet = true;
+    } else if (e.key == 'a') {
+        square.style.backgroundImage = "url('./images/aquila_background.png')";
+        square.classList.add('big'); // Make the square big
+        colorSet = true;
         }
     }
 };
