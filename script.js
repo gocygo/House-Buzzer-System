@@ -37,6 +37,12 @@ resetButton.onclick = function() {
     colorSet = false;
 };
 
+//Reset square image on spacebar keypress
+if (e.key == ' ') {
+    square.style.backgroundImage = '';
+    square.classList.remove('big'); // Make the square normal size
+    colorSet = false;
+};
 
 // Get references to dark mode and light mode toggle buttons
 var darkModeToggle = document.getElementById('dark-mode-toggle');
