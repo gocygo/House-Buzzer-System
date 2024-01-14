@@ -6,7 +6,7 @@ var colorSet = false;
 // Listen for keydown events on the body
 document.body.onkeydown = function(e) {
     if (!colorSet) {
-      // Change square image and size on 'v (vir)', 'l (leo)', 'b (bovis)', or 'a (aquila)' key press
+      // Change square image and size on 'v' (vir), 'l' (leo), 'b' (bovis), or 'a' (aquila) key press
       if (e.key == 'v') {
         square.style.backgroundImage = "url('./images/vir_background.png')";
         square.classList.add('big'); // Make the square big
