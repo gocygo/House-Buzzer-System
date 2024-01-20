@@ -1,13 +1,10 @@
-Certainly! Here's the README in GitHub Markdown:
-
-```markdown
 # House Buzzer System
 
 Welcome to the House Buzzer System README! 🏠🔔
 
 This is a detailed walkthrough of a buzzer system, similar to the one used in quiz games. The code provided includes two main functionalities:
 
-1. **Changing the background image**: Different images can be chosen by pressing keys 'v', 'l', 'b', or 'a'. Each key press changes the background image of a square defined on the webpage. For instance, 'v' links to an image for option "Vir", 'l' for "Leo", 'b' for "Bovis", and 'a' for "Aquila". The images are then set as the background for the div element with the id `square`. Once a background image is set, no other images can replace it until the system is reset. 
+1. **Changing the background image**: Different images can be chosen by pressing keys 'v', 'l', 'b', or 'a'. Each key press changes the background image of a square defined on the webpage. For instance, 'v' links to an image for option "Vir", 'l' for "Leo", 'b' for "Bovis", and 'a' for "Aquila". The images are then set as the background for the div element with the id `square`. Once a background image is set, no other images can replace it until the system is reset.
 2. **Switching between dark and light modes**: Two icons at the bottom of the page (represented by the moon and sun icons) allow the user to toggle between light and dark modes.
 
 ## Detailed Code Explanation
@@ -38,6 +35,3 @@ The JavaScript section detects keydown events and button click events.
 - Dark / Light Mode Toggle: Clicking on the sun or moon icon triggers toggling between light and dark modes. In the dark mode, the sun icon shows for switching back and vice versa.
 
 Please note: You can replace the links to the background images with any images of your choice and adapt the functionalities for your unique use case. Following this model, you can easily extend it to fit the user interaction you require.
-```
-
-Feel free to copy and paste this Markdown content directly into your GitHub README.
