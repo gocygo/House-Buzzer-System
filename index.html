@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-   <!-- Preloading images for faster display when keys are pressed -->
-   <link rel="preload" as="image" href="./images/vir_background.png">
-   <link rel="preload" as="image" href="./images/leo_background.png">
-   <link rel="preload" as="image" href="./images/bovis_background.png">
-   <link rel="preload" as="image" href="./images/aquila_background.png">
+    <!-- Preload background images for faster display upon use -->
+    <link rel="preload" as="image" href="./images/vir_background.png">
+    <link rel="preload" as="image" href="./images/leo_background.png">
+    <link rel="preload" as="image" href="./images/bovis_background.png">
+    <link rel="preload" as="image" href="./images/aquila_background.png">
 
-   <!-- Page title -->
-   <title>House Buzzer System</title>
+    <!-- Title of the webpage -->
+    <title>House Buzzer System</title>
 
-   <!-- Favicons for various devices -->
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-   <link rel="manifest" href="/site.webmanifest">
+    <!-- Favicon links for various devices and sizes -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- Web application manifest for defining display and appearance on mobile devices -->
+    <link rel="manifest" href="/site.webmanifest">
 
-   <!-- External CSS libraries -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   <link rel="stylesheet" href="styles.css">
+    <!-- Meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External stylesheet for Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   <!-- Main container for the application -->
-   <div id="container">
-       <!-- Square element that displays the background image -->
-       <div id="square"></div>
-       <!-- Button to reset the square image and size -->
-       <button id="reset">Reset</button>
-       <!-- Mode toggle buttons -->
-       <div id="mode-toggle">
-           <button id="dark-mode-toggle">
-               <i class="fas fa-moon"></i>
-           </button>
-           <button id="light-mode-toggle">
-               <i class="fas fa-sun"></i>
-           </button>
-       </div>
-   </div>
-   <!-- Credit section -->
-   <div id="credit">Made by: <a href="https://github.com/gocygo" target="_blank">gocygo</a></div>
-   <!-- JavaScript file that contains the logic for the application -->
-   <script src="script.js"></script>
+    <!-- Main container for the content -->
+    <div id="container">
+        <!-- Square element that changes background images -->
+        <div id="square"></div>
+
+        <!-- Container for mode toggle buttons and countdown display -->
+        <div id="mode-toggle-container">
+            <!-- Button to toggle dark mode -->
+            <button id="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <!-- Button to toggle light mode -->
+            <button id="light-mode-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+            <!-- Countdown display, hidden by default -->
+            <div id="countdown"></div>
+        </div>
+    </div>
+
+    <!-- Container for the credit section -->
+    <div id="credit-container">
+        <!-- Credit information with a link to the creator's GitHub profile -->
+        <div id="credit">
+            <i class="fas fa-info-circle"></i> Made by: <a href="https://github.com/gocygo" target="_blank">gocygo</a>
+            <!-- Hidden span for additional creator information, shown on hover -->
+            <span id="credit-info">
+                Additional information about the creator goes here.
+            </span>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
