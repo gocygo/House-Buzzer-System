@@ -3,7 +3,7 @@ var square = document.getElementById('square');
 // Boolean flag to track if the color has been set
 var colorSet = false;
 
-// Function to start a countdown from 12 seconds
+// Function to start a countdown from 8 seconds
 function startCountdown() {
     if (timerRunning) { // If the timer is already running, do nothing
         return;
