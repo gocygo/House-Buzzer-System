@@ -10,7 +10,7 @@ function startCountdown() {
     }
     timerRunning = true; // Set the timerRunning flag to true
 
-    let seconds = 12; // Set initial countdown seconds
+    let seconds = 8; // Set initial countdown seconds
     const countdownElement = document.getElementById('countdown'); // Get the countdown display element
     countdownElement.style.display = 'block'; // Make the countdown visible
 
