@@ -162,7 +162,7 @@ body.dark-mode #credit {
   margin-bottom: 20px;
   display: none;
   font-family: 'Comic Sans MS', cursive;
-  user-select: none;
+  user-select: none; /* not sure why his is broken in firefox but whatever*/
 }
 
 body.dark-mode #countdown {
