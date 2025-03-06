@@ -24,15 +24,21 @@ function startCountdown() {
     }
     timerRunning = true;
     let seconds = 8;
+    
+    // Set the initial countdown value before displaying the element
+    countdownElement.innerText = seconds;
     countdownElement.style.display = 'block';
+    
     countdownInterval = setInterval(() => {
-        countdownElement.innerText = seconds;
-        if (seconds === 0) {
+        seconds--;
+        
+        if (seconds < 0) {
             clearInterval(countdownInterval);
             resetSquare();
             timerRunning = false;
+        } else {
+            countdownElement.innerText = seconds;
         }
-        seconds--;
     }, 1000);
 }
 
